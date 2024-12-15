@@ -3,6 +3,20 @@
 
 $gradient: linear-gradient(180deg, #124644, #01615F) !default;
 $primary: #01615F;
+$secondary: #FFFB9A;
+$tertiary: #F8F3EF;
+$tertiary-dark: #F3EBE8;
+$secondary-dark: #FE7972;
+$enable-rounded: false;
+
+.font-huge {
+    font-size: 72px;
+    line-height: 100%;
+}
+
+.mt-minus {
+    margin-top: -185px;
+}
 
 //Variables and Mixins MUST go below this comment.
 @import "../node_modules/bootstrap/scss/variables";
@@ -11,12 +25,26 @@ $primary: #01615F;
 //Custom Colours
 $custom-colors:(
     "primary": $primary,
-    "tertiary": rgb(200, 195, 221),
+    "secondary": $secondary,
+    "secondary-dark": $secondary-dark,
+    "tertiary": $tertiary,
+    "tertiary-dark": $tertiary-dark,
     "tertiary-light": rgb(255, 234, 194)
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+$custom-spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  huge: 260px,
+) !default;
+
+$spacers: map-merge($spacers, $custom-spacers);
 
 @each $color, $val in $colors {
     .bg-#{$color} {
