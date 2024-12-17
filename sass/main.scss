@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+// ^ Trying to get a font called nunito to work. No luck so far.
 //Functions go at the top!
 @import "../node_modules/bootstrap/scss/functions";
 
 $gradient: linear-gradient(180deg, #124644, #01615F) !default;
 $primary: #01615F;
+$primary-dark: #005250;
 $secondary: #FFFB9A;
 $tertiary: #F8F3EF;
 $tertiary-dark: #F3EBE8;
 $secondary-dark: #FE7972;
 $enable-rounded: false;
+
+
+.colossus {
+    font-size: 200px;
+}
 
 .font-huge {
     font-size: 72px;
@@ -36,6 +44,7 @@ $enable-rounded: false;
 //Custom Colours
 $custom-colors:(
     "primary": $primary,
+    "primary-dark": $primary-dark,
     "secondary": $secondary,
     "secondary-dark": $secondary-dark,
     "tertiary": $tertiary,
@@ -57,6 +66,11 @@ $custom-spacers: (
   8: $spacer * 8,
   huge: 260px,
 ) !default;
+
+// Here I'm also trying to make the font work.
+:root {
+    --bs-body-font-family: "Nunito", sans-serif;
+}
 
 $spacers: map-merge($spacers, $custom-spacers);
 
