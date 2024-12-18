@@ -3,15 +3,35 @@
 //Functions go at the top!
 @import "../node_modules/bootstrap/scss/functions";
 
-$gradient: linear-gradient(180deg, #124644, #01615F) !default;
-$primary: #01615F;
-$primary-dark: #005250;
-$secondary: #FFFB9A;
+
+//TGTG Colours
+// $primary: #01615F;
+// $primary-dark: #005250;
+// $secondary: #FFFB9A;
+// $secondary-dark: #FE7972;
+// $tertiary: #F8F3EF;
+// $tertiary-dark: #F3EBE8;
+
+//Savour Colours
+$primary: #64981B;
+$primary-dark: #466a13;
+
+
+// D5A253
+// 5C6BC0
+// E87E3A
+// 585858
+
+$secondary: #585858;
+$secondary-dark: #FE7972;
+
 $tertiary: #F8F3EF;
 $tertiary-dark: #F3EBE8;
-$secondary-dark: #FE7972;
-$enable-rounded: false;
 
+$enable-rounded: false;
+// $gradient: linear-gradient(180deg, #124644, #01615F) !default;
+// $gradient: linear-gradient(180deg, #124644, $primary) !default;
+$gradient: linear-gradient(180deg, $secondary, $primary) !default;
 
 .colossus {
     font-size: 200px;
