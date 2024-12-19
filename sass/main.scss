@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 // ^ Trying to get a font called nunito to work. No luck so far.
 //Functions go at the top!
 @import "../node_modules/bootstrap/scss/functions";
@@ -13,7 +13,8 @@
 // $tertiary-dark: #F3EBE8;
 
 //Savour Colours
-$primary: #64981B;
+// $primary: #64981B;
+$primary: #4c8201;
 $primary-dark: #466a13;
 
 
@@ -22,8 +23,8 @@ $primary-dark: #466a13;
 // E87E3A
 // 585858
 
-$secondary: #585858;
-$secondary-dark: #FE7972;
+$secondary: #00FFFF;
+$secondary-dark: #02cece;
 
 $tertiary: #F8F3EF;
 $tertiary-dark: #F3EBE8;
@@ -31,14 +32,19 @@ $tertiary-dark: #F3EBE8;
 $enable-rounded: false;
 // $gradient: linear-gradient(180deg, #124644, #01615F) !default;
 // $gradient: linear-gradient(180deg, #124644, $primary) !default;
-$gradient: linear-gradient(180deg, $secondary, $primary) !default;
+$gradient: linear-gradient(180deg, $primary-dark, $primary) !default;
 
 .colossus {
-    font-size: 200px;
+    font-size: clamp(100px, 13vw, 200px);
 }
 
-.font-huge {
+h1 {
+    font-size: clamp(45px, 8vw, 72px) !important;
+}
+
+.fs-huge {
     font-size: 72px;
+    //min 45 when sm otherwise 72
     line-height: 100%;
 }
 
@@ -54,7 +60,7 @@ $gradient: linear-gradient(180deg, $secondary, $primary) !default;
     font-size: 60px;
 }
 .mt-minus {
-    margin-top: -185px;
+    margin-bottom: -185px;
 }
 
 //Variables and Mixins MUST go below this comment.
@@ -71,7 +77,6 @@ $custom-colors:(
     "tertiary-dark": $tertiary-dark,
     "tertiary-light": rgb(255, 234, 194)
 );
-
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 $custom-spacers: (
@@ -86,13 +91,14 @@ $custom-spacers: (
   8: $spacer * 8,
   huge: 260px,
 ) !default;
+$spacers: map-merge($spacers, $custom-spacers);
 
 // Here I'm also trying to make the font work.
 :root {
     --bs-body-font-family: "Nunito", sans-serif;
 }
 
-$spacers: map-merge($spacers, $custom-spacers);
+
 
 @each $color, $val in $colors {
     .bg-#{$color} {
