@@ -22,9 +22,9 @@ $primary-dark: #466a13;
 // 5C6BC0
 // E87E3A
 // 585858
-
-$secondary: #00FFFF;
-$secondary-dark: #02cece;
+//light amber orange is good
+$secondary: #FFAB40;
+$secondary-dark: #be8132;
 
 $tertiary: #F8F3EF;
 $tertiary-dark: #F3EBE8;
@@ -34,6 +34,8 @@ $enable-rounded: false;
 // $gradient: linear-gradient(180deg, #124644, $primary) !default;
 $gradient: linear-gradient(180deg, $primary-dark, $primary) !default;
 
+
+
 .colossus {
     font-size: clamp(100px, 13vw, 200px);
 }
@@ -41,6 +43,11 @@ $gradient: linear-gradient(180deg, $primary-dark, $primary) !default;
 h1 {
     font-size: clamp(45px, 8vw, 72px) !important;
 }
+
+p {
+    font-size: 18px;
+}
+
 
 .fs-huge {
     font-size: 72px;
@@ -56,8 +63,8 @@ h1 {
     font-size: 32px;
 }
 
-.font-60 {
-    font-size: 60px;
+.font-responsive-60 {
+    font-size: clamp(20px, 6vw, 60px);
 }
 .mt-minus {
     margin-bottom: -185px;
