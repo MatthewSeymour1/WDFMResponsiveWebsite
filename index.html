@@ -3,56 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
 
-
-    
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-
-
 
     <title>Responsive Website</title>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark bg-gradient border-bottom py-3 fixed-top shadow-lg">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark bg-gradient border-bottom p-3 fixed-top shadow-lg">
         <div class="container-fluid d-flex justify-content-between">
+            <!-- Logo -->
+            <a href="index.html" class="navbar-brand">
+                <img src="images/savourLogo.png" alt="Company Logo">
+            </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Food Waste</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About Us
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="findoutmore.html">About Us</a>
                     </li>
                 </ul>
-                <a href="#" class="navbar-brand mx-auto">
-                    <img src="images/savourLogo.png" alt="Company Logo">
-                </a>
-                <form class="d-flex ms-auto" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
+            <button type="button" class="btn btn-primary border text-uppercase fw-bold">Download the App</button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
-
+    
     <!-- Profit From Your Surplus Food, Gardening Photo-->
     <div class="bg-primary pt-6">
         <div class="container">
@@ -64,7 +48,7 @@
                 <div class="col-sm-12 col-lg-8 offset-lg-2">
                     <p class="text-white">Turn your surplus food into a new revenue stream while reducing waste. Savour connects businesses with eco-conscious customers who value sustainability and affordability. Every meal matters—join the movement today!
                     </p>
-                    <button type="button" class="btn btn-primary border mb-6 text-uppercase fw-bold">Primary with White Border</button>
+                    <button type="button" class="btn btn-primary border mb-6 text-uppercase fw-bold">Get started now</button>
                 </div>
             </div>
             <div class="row">
@@ -91,7 +75,7 @@
                 </div>
                 <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center">
                     <h4 class="text-uppercase text-secondary-dark fw-bold">Introducing</h4>
-                    <h3 class="text-primary fw-bold text-uppercase">Lorem, ipsum dolor.</h3>
+                    <h3 class="text-primary fw-bold text-uppercase">Fresh Ideas for Surplus Food</h3>
                     <p>Discover how *Savour* helps businesses like yours reduce food waste while earning more. Whether you're a bakery with unsold pastries, a grocer with surplus produce, or a restaurant with leftover meals, our platform makes it easy to connect with customers eager to save money and make a difference. Together, we can build a sustainable future, one meal at a time.
                     </p>
                 </div>
@@ -117,41 +101,39 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
-                    <h4 class="text-uppercase text-secondary-dark fw-bold">Introducing</h4>
-                    <h3 class="text-primary fw-bold text-uppercase">Lorem, ipsum dolor.</h3>
+                    <h4 class="text-uppercase text-secondary-dark fw-bold">Great for the Planet</h4>
+                    <h3 class="text-primary fw-bold text-uppercase fs-1">Good for Business</h3>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-4">
+                <div class="col-sm-12 col-lg-6 col-xl-4 pt-sm-5 pt-md-0 pb-5">
                     <i class="bi bi-shop fs-1"></i>
                     <h3 class="text-primary fw-bold font-32 text-uppercase">100%</h3>
                     <p class="text-primary fw-bold text-uppercase font-25">Of surplus food can make a difference.</p>
                     <p>Every order supports a greener, waste-free world.</p>
                 </div>
-                <div class="col-sm-12 col-lg-6 col-xl-4">
+                <div class="col-sm-12 col-lg-6 col-xl-4 pb-5">
                     <i class="bi bi-shop fs-1"></i>
                     <h3 class="text-primary fw-bold font-32 text-uppercase">75%</h3>
                     <p class="text-primary fw-bold text-uppercase font-25">Reduction in food waste for partners.</p>
                     <p>On average, businesses using Savour reduce their food waste by three-fourths.</p>
                 </div>
-                <div class="col-sm-12 col-xl-4 ">
+                <div class="col-sm-12 col-xl-4">
                     <i class="bi bi-shop fs-1"></i>
                     <h3 class="text-primary fw-bold font-32 text-uppercase">85%</h3>
                     <p class="text-primary fw-bold text-uppercase font-25">Customer satisfaction rate.</p>
                     <p>Customers appreciate the sustainable, affordable food options Savour provides.</p>
                 </div>
                 <div class="py-4 mb-huge">
-                    <button type="button" class="btn btn-tertiary border-primary text-primary text-uppercase fw-bold">Business Sign Up</button>
+                    <button type="button" class="btn btn-tertiary border-primary text-primary text-uppercase fw-bold">See more Stats!</button>
                 </div>
-                
-
-
             </div>
             <!-- Text Card, Groceries Photo -->
             <div class="row pb-huge">
                 <div class="col-lg-6 col-sm-12 text-lg-start text-sm-center pb-5">
-                    <h4 class="text-uppercase text-secondary-dark fw-bold">Introducing</h4>
-                    <h3 class="text-primary fw-bold text-uppercase">Lorem, ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, ipsa accusamus. Illum, sed, eveniet at alias ipsum quibusdam dolorem soluta, doloremque quaerat explicabo dolor perspiciatis eligendi labore similique? Nesciunt asperiores saepe nam minus error consequatur dolor, facere repellat totam harum iusto itaque autem delectus veritatis, enim nostrum nobis dolorem quisquam laborum velit voluptatem vel inventore? Perferendis, suscipit laudantium quis ex nesciunt inventore explicabo odio! Quibusdam temporibus praesentium eos amet soluta.</p>
-                    <button type="button" class="btn btn-tertiary border-primary text-primary text-uppercase fw-bold">Business Sign Up</button>
+                    <h4 class="text-uppercase text-secondary-dark fw-bold">Real Businesses, Real Impact</h4>
+                    <h3 class="text-primary fw-bold text-uppercase">See how Savour is making a difference</h3>
+                    <p>“Savour has allowed us to reduce our food waste by 70%. Not only are we saving money, but we’re also contributing to a more sustainable future. Customers love that we’re helping reduce food waste while providing them with affordable meals!” – Bakery Owner
+                    <br>“By using Savour, we’re able to donate our unsold produce and ensure it doesn’t go to waste. It's a win-win for us and the planet.” – Grocery Store Manager</p>
+                    <button type="button" class="btn btn-tertiary border-primary text-primary text-uppercase fw-bold">See More Success Stories</button>
                 </div>
                 <div class="col-lg-6 col-sm-12">
                             <img src="images/groceries.png" alt="Groceries" class="d-block mx-auto">
@@ -162,57 +144,59 @@
     <div class="bg-primary-dark text-white text-center fw-bold text-uppercase font-32 text-nowrap">
         SUSHI SMOOTHIES PIZZA MUFFINS BURGERS POKE BURRITOS DONUTS SALADS BREAD PASTRIES GROCERIES
     </div>
+    <!-- Veggies Photo, Accordion -->
     <div class="bg-primary">
         <div class="container">
             <div class="row gx-8 align-items-center py-7">
                 <div class="col-lg-6">
-                    <img src="images/freshveggies.jpg" alt="Fresh Vegetables" class="w-100">
+                    <img src="images/freshveggies.jpg" alt="Fresh Vegetables" class="w-100 pb-sm-5 pb-lg-0">
                 </div>
                 <div class="col-lg-6">
                     <h4 class="text-uppercase text-secondary fw-bold">FAQs</h4>
                     <h3 class="text-primary text-white fw-bold text-uppercase">How to sell surplus food with Savour</h3>
+                    <!-- Accordion -->
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              What Food Can I Sell?
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body bg-primary text-white">
-                                You can sell unsold meals, fresh produce, baked goods, or any surplus food that meets local health and safety regulations. Our app is designed to help you maximize your impact and minimize waste.
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What Food Can I Sell?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-primary text-white">
+                                    You can sell unsold meals, fresh produce, baked goods, or any surplus food that meets local health and safety regulations. Our app is designed to help you maximize your impact and minimize waste.
+                                </div>
                             </div>
-                          </div>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              How Do I Get Started?
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body bg-primary text-white">
-                                Sign up for a business account, list your surplus items, and set your prices. Savour handles the rest, connecting you with customers who are ready to buy!
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How Do I Get Started?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-primary text-white">
+                                    Sign up for a business account, list your surplus items, and set your prices. Savour handles the rest, connecting you with customers who are ready to buy!
+                                </div>
                             </div>
-                          </div>
                         </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Why Choose Savour?
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body bg-primary text-white">
-                                Not only will you help reduce waste and contribute to sustainability, but you'll also attract eco-conscious customers and unlock a new source of income. It’s a win for your business and the planet.
+                        <div class="accordion-item border-0 border-bottom">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed text-white fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Why Choose Savour?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg-primary text-white">
+                                    Not only will you help reduce waste and contribute to sustainability, but you'll also attract eco-conscious customers and unlock a new source of income. It’s a win for your business and the planet.
+                                </div>
                             </div>
-                          </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 bg-primary-dark py-5 my-8 d-flex justify-content-between">
                     <h3 class="text-primary text-white fw-bold text-uppercase">Download the app to Savour today!</h3>
-                    <button type="button" class="btn btn-primary-dark border text-white text-uppercase fw-bold">Business Sign Up</button>
+                    <button type="button" class="btn btn-primary-dark border text-white text-uppercase fw-bold">Download the app</button>
                 </div>
             </div>
         </div>
